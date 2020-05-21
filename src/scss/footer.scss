@@ -1,0 +1,23 @@
+.footer {
+    background-color: #e8ebf1;
+}
+
+.footer__top-row {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+.footer__top-col {
+    flex: 0 0 16%;
+}
+
+.footer__bottom-row {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+.footer__bottom-col {
+    flex: 0 0 50%;
+}

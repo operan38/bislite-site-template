@@ -1,0 +1,40 @@
+@import 'reset';
+@import 'mixins';
+@import 'fonts';
+
+$font-default: 'Lato', sans-serif;
+$mw: 1000px;
+$md1: $mw + 12px;
+$md2: 992px;
+$md3: 768px;
+$md4: 576px;
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: $mw;
+    @media (max-width: $md1) {
+        max-width: 970px;
+    }
+    @media (max-width: $md2) {
+        max-width: 750px;
+    }
+    @media (max-width: $md3) {
+        max-width: none;
+        padding: 0 10px;
+    }
+}
+
+@import 'header';
+@import 'content';
+
+@import 'section/top-slider';
+@import 'section/middle-section';
+@import 'section/latest-work';
+@import 'section/testimonials-clients';
+
+@import 'footer';

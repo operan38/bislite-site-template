@@ -1,0 +1,40 @@
+.testimonials-clients__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonials-clients__col {
+    flex: 0 0 50%;
+}
+
+.testimonials-clients__title {
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 0 0 25px 0;
+    padding: 12px 0 0 40px;
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 8px;
+    }
+}
+
+.testimonials-clients__title--speechcloud-icon {
+    &:before {
+        width: 24px;
+        height: 23px;
+        background: url('../img/speechcloud_icon.png') 0 0 no-repeat;
+    }
+}
+
+.testimonials-clients__title--people-icon {
+    &:before {
+        width: 24px;
+        height: 20px;
+        background: url('../img/people_icon.png') 0 0 no-repeat;
+    }
+}
