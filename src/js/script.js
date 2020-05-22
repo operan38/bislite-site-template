@@ -29,6 +29,31 @@ $(document).ready(() => {
 		$('html, body').toggleClass('lock');
 	});
 
+	$(window).on('scroll', function(){
+		
+	});
+
+	$(window).on('resize', function(){
+		$('.js-header__nav-item--submenu').hover(function () {
+			if ($(window).width() >= 768) {
+				$(this).children('.js-header__nav-link--submenu').addClass('active');
+				$(this).children('.js-header__nav-sub-menu-list').addClass('active');
+			}
+		}, function () {
+			if ($(window).width() >= 768) {
+				$(this).children('.js-header__nav-link--submenu').removeClass('active');
+				$(this).children('.js-header__nav-sub-menu-list').removeClass('active');
+			}
+		})
+	});
+
+	$('.js-header__nav-link--submenu-mobile-open-menu').on('click', function () {
+		$(this).toggleClass('active');
+		$(this).parent().children('.js-header__nav-sub-menu-list').toggleClass('active');
+	})
+
+	$(window).resize();
+
 	$('.js-top-slider').slick({
 		arrows: false,
 		dots: true,

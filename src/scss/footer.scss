@@ -111,13 +111,10 @@
 }
 
 @media (max-width: $md1) {
-    .footer__top-col-about {
-        margin: 0 10px 20px 10px;
-    }
-
     .footer__top-col-explore,
     .footer__top-col-connect-with-us,
-    .footer__top-col-browse {
+    .footer__top-col-browse,
+    .footer__top-col-about {
         margin: 0 10px 20px 10px;
     }
 
@@ -142,16 +139,11 @@
     }
 
     .footer__bottom-copy {
-        order: 2;
         margin-bottom: 5px;
 
         &:last-child {
             margin-bottom: 5px;
         }
-    }
-
-    .footer__logo {
-        order: 1;
     }
 }
 

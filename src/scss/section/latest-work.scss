@@ -16,6 +16,11 @@
     }
 }
 
+.latest-work__container {
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #dfe1e5;
+}
+
 .latest-work__row {
     display: flex;
     flex-flow: wrap;
@@ -46,11 +51,6 @@
         bottom: 0px;
         left: 0;
     }
-}
-
-.latest-work__container {
-    padding: 20px 0 20px 0;
-    border-bottom: 1px solid #dfe1e5;
 }
 
 @media (max-width: $md2) {
