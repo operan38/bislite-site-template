@@ -8,16 +8,59 @@
     flex-flow: wrap;
 }
 
-.footer__top-col {
-    flex: 0 0 16%;
-}
-
 .footer__bottom-row {
     display: flex;
     justify-content: space-between;
     flex-flow: wrap;
 }
 
-.footer__bottom-col {
-    flex: 0 0 50%;
+.footer__top-list-icon {
+    display: flex;
+}
+
+.footer__top-icon {
+    display: block;
+    width: 53px;
+    height: 51px;
+}
+
+.footer__top-fb--icon {
+    background: url('../img/social/facebook_icon.png');
+}
+
+.footer__top-db--icon {
+    background: url('../img/social/dribbble_icon.png');
+}
+
+.footer__top-pin--icon {
+    background: url('../img/social/pinterest_icon.png');
+}
+
+.footer__top-link--icon {
+    background: url('../img/social/linkedin_icon.png');
+}
+
+.footer__top-skype--icon {
+    background: url('../img/social/skype_icon.png');
+}
+
+.footer__top-share--icon {
+    background: url('../img/social/sharethis_icon.png');
+}
+
+.footer__logo {
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    text-decoration: none;
+    z-index: 3;
+
+    & span:first-child {
+        color: #000;
+        font-weight: 900;
+    }
+
+    & span:last-child {
+        color: #2aacc8;
+        font-weight: 400;
+    }
 }

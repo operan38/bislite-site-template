@@ -2,7 +2,7 @@
 @import 'mixins';
 @import 'fonts';
 
-$font-default: 'Lato', sans-serif;
+$font-default: Arial, Helvetica, sans-serif;
 $mw: 1000px;
 $md1: $mw + 12px;
 $md2: 992px;
@@ -10,7 +10,7 @@ $md3: 768px;
 $md4: 576px;
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $font-default;
 }
 
 .section-container {

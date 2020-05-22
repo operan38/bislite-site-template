@@ -1,13 +1,11 @@
-.testimonials-clients__row {
+.testimonials-clients__row,
+.clients__row {
     display: flex;
     justify-content: space-between;
 }
 
-.testimonials-clients__col {
-    flex: 0 0 50%;
-}
-
-.testimonials-clients__title {
+.clients__title,
+.testimonials__title {
     font-weight: bold;
     font-size: 15px;
     text-transform: uppercase;
@@ -23,7 +21,7 @@
     }
 }
 
-.testimonials-clients__title--speechcloud-icon {
+.testimonials__title--speechcloud-icon {
     &:before {
         width: 24px;
         height: 23px;
@@ -31,7 +29,7 @@
     }
 }
 
-.testimonials-clients__title--people-icon {
+.clients__title--people-icon {
     &:before {
         width: 24px;
         height: 20px;
