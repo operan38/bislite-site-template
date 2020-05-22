@@ -868,6 +868,8 @@ body {
 
   .header__nav-item {
     margin: 22px 0px 0px 12px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #c0c0c0;
   }
 
   .header__nav-link {
@@ -978,10 +980,12 @@ body {
   }
 
   .header__nav-link--submenu-mobile-open-menu.active:after {
-    top: 2px;
+    top: 3px;
     -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
             transform: rotate(-45deg);
+    border-right: 2px solid #2aacc8;
+    border-top: 2px solid #2aacc8;
   }
 
   .header__nav-link--submenu-mobile-open-menu:after {
@@ -990,15 +994,15 @@ body {
     transition: all 0.3s ease 0s;
     position: absolute;
     content: '';
-    width: 0.7em;
-    height: 0.7em;
-    border-right: 0.1px solid #000;
-    border-top: 0.1px solid #000;
+    width: 12px;
+    height: 12px;
+    border-right: 2px solid #757575;
+    border-top: 2px solid #757575;
     -webkit-transform: rotate(135deg);
         -ms-transform: rotate(135deg);
             transform: rotate(135deg);
     left: 3px;
-    top: -4px;
+    top: -5px;
     pointer-events: none;
   }
 
