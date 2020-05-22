@@ -26,7 +26,7 @@ testWebP((support) => {
 $(document).ready(() => {
 	$('.js-header__burger').on('click', () => {
 		$('.js-header__burger, .js-header__nav').toggleClass('active');
-		$('body, html').css('overflow', 'hidden');
+		$('html, body').toggleClass('lock');
 	});
 
 	$('.js-top-slider').slick({

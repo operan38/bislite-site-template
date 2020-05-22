@@ -7,13 +7,14 @@
 
 .middle-section__row {
     display: flex;
-    flex-flow: wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
 }
 
 .middle-section__col {
-    flex: 0 0 22%;
+    flex: 0 1 240px;
+    margin: 4px;
     position: relative;
 }
 
@@ -89,5 +90,29 @@
         width: 5px;
         height: 7px;
         background: url('../img/arrow_right_icon.png') 0 0 no-repeat;
+    }
+}
+
+@media (max-width: $md2) {
+    .middle-section {
+        padding: 20px 0;
+    }
+
+    .middle-section__row {
+        justify-content: space-around;
+    }
+
+    .middle-section__col {
+        margin: 12px 6px;
+    }
+}
+
+@media (max-width: $md3) {
+    .middle-section {
+        padding: 10px 0;
+    }
+
+    .middle-section__col {
+        flex: 0 1 100%;
     }
 }

@@ -62,9 +62,16 @@
     text-transform: uppercase;
     text-decoration: none;
     padding: 8px;
+    white-space: nowrap;
 
     &:hover {
         border-top: 5px solid #2aacc8;
+    }
+}
+
+@media (max-width: $md2) {
+    .header__nav-link {
+        padding: 4px 4px;
     }
 }
 
@@ -90,6 +97,24 @@
 
         &.active {
             top: 0;
+        }
+    }
+
+    html.lock,
+    body.lock {
+        overflow: hidden;
+    }
+
+    .header__nav-item {
+        margin: 22px 0px 0px 12px;
+    }
+
+    .header__nav-link {
+        padding: 0px;
+
+        &:hover {
+            border-top: none;
+            border-bottom: 2px solid #2aacc8;
         }
     }
 

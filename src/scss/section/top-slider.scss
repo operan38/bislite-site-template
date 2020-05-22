@@ -75,3 +75,17 @@
         }
     }
 }
+
+@media (max-width: $md3) {
+    .top-slider__container {
+        .slick-dots {
+            button {
+                font-size: 0;
+                width: 10px;
+                height: 10px;
+                background-color: #71a3a7;
+                border-radius: 50%;
+            }
+        }
+    }
+}

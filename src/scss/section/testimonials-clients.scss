@@ -1,7 +1,12 @@
+.testimonials-clients {
+    margin: 20px 0 40px 0;
+}
+
 .testimonials-clients__row,
 .clients__row {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .clients__title,
@@ -9,9 +14,10 @@
     font-weight: bold;
     font-size: 15px;
     text-transform: uppercase;
-    margin: 0 0 25px 0;
-    padding: 12px 0 0 40px;
+    margin: 0 0 20px 0;
+    padding: 12px 0 0 30px;
     position: relative;
+    width: 100%;
 
     &:before {
         content: '';
@@ -19,6 +25,26 @@
         left: 0px;
         top: 8px;
     }
+}
+
+.testimonials__col {
+    flex: 0 1 480px;
+}
+
+.testimonials__desc {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.clients__col img {
+    border: 1px solid #e8ebf1;
+}
+
+.testimonials__author {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
 }
 
 .testimonials__title--speechcloud-icon {
@@ -34,5 +60,32 @@
         width: 24px;
         height: 20px;
         background: url('../img/people_icon.png') 0 0 no-repeat;
+    }
+}
+
+@media (max-width: $md2) {
+    .testimonials-clients {
+        margin: 10px 0 20px 0;
+    }
+
+    .testimonials-clients__row,
+    .clients__row {
+        justify-content: center;
+    }
+
+    .testimonials__desc {
+        margin-bottom: 15px;
+    }
+
+    .testimonials__col {
+        flex: 0 1 100%;
+    }
+
+    .clients__col img {
+        margin: 12px 6px;
+    }
+
+    .testimonials__author {
+        margin-bottom: 20px;
     }
 }

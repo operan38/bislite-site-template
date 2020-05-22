@@ -1,17 +1,48 @@
 .footer {
     background-color: #e8ebf1;
+    padding: 35px 0 35px 0;
 }
 
 .footer__top-row {
     display: flex;
     justify-content: space-between;
     flex-flow: wrap;
+    margin-bottom: 10px;
 }
 
 .footer__bottom-row {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     flex-flow: wrap;
+}
+
+.footer__top-title {
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.footer__top-about-desc {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer__top-list {
+    line-height: 1.5;
+
+    li {
+        margin-bottom: 5px;
+        a {
+            color: #000;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
 }
 
 .footer__top-list-icon {
@@ -22,6 +53,7 @@
     display: block;
     width: 53px;
     height: 51px;
+    margin: 6px 6px 6px 0;
 }
 
 .footer__top-fb--icon {
@@ -48,6 +80,19 @@
     background: url('../img/social/sharethis_icon.png');
 }
 
+.footer__top-col-about {
+    margin: 0 10px 20px 10px;
+    flex: 0 1 235px;
+}
+
+.footer__top-col-contact-us {
+    flex: 0 1 170px;
+}
+
+.footer__bottom-copy {
+    line-height: 1.5;
+}
+
 .footer__logo {
     font-family: 'Lato', sans-serif;
     font-size: 50px;
@@ -62,5 +107,58 @@
     & span:last-child {
         color: #2aacc8;
         font-weight: 400;
+    }
+}
+
+@media (max-width: $md1) {
+    .footer__top-col-about {
+        margin: 0 10px 20px 10px;
+    }
+
+    .footer__top-col-explore,
+    .footer__top-col-connect-with-us,
+    .footer__top-col-browse {
+        margin: 0 10px 20px 10px;
+    }
+
+    .footer__top-col-contact-us {
+        margin: 0 10px 20px 10px;
+    }
+}
+
+@media (max-width: $md2) {
+    .footer {
+        padding: 20px 0 20px 0;
+    }
+
+    .footer__top-col-about {
+        flex: 0 1 100%;
+    }
+
+    .footer__top-col-contact-us,
+    .footer__top-col-explore,
+    .footer__top-col-browse {
+        flex: 0 1 25%;
+    }
+
+    .footer__bottom-copy {
+        order: 2;
+        margin-bottom: 5px;
+
+        &:last-child {
+            margin-bottom: 5px;
+        }
+    }
+
+    .footer__logo {
+        order: 1;
+    }
+}
+
+@media (max-width: $md4) {
+    .footer__top-col-contact-us,
+    .footer__top-col-explore,
+    .footer__top-col-browse {
+        flex: 0 1 auto;
     }
 }
