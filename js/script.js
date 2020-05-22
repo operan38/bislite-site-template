@@ -4895,6 +4895,11 @@ $(document).ready(function () {
     });
   });
   $('.js-header__nav-link--submenu-mobile-open-menu').on('click', function () {
+    if (!$(this).hasClass('active')) {
+      $('.js-header__nav-link--submenu-mobile-open-menu').removeClass('active');
+      $('.js-header__nav-link--submenu-mobile-open-menu').parent().children('.js-header__nav-sub-menu-list').removeClass('active');
+    }
+
     $(this).toggleClass('active');
     $(this).parent().children('.js-header__nav-sub-menu-list').toggleClass('active');
   });

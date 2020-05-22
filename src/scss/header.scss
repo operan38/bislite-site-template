@@ -174,8 +174,8 @@
     }
 
     .header__nav-item {
-        margin: 22px 0px 0px 12px;
-        padding-bottom: 5px;
+        margin: 15px 0px 15px 12px;
+        padding-bottom: 12px;
         border-bottom: 1px solid #c0c0c0;
     }
 
@@ -265,13 +265,13 @@
         display: inline-flex;
         position: relative;
         border: 0px solid #000;
-        margin-left: 14px;
+        margin-left: 20px;
         width: 20px;
         height: 10px;
 
         &.active {
             &:after {
-                top: 3px;
+                top: 0px;
                 transform: rotate(-45deg);
                 border-right: 2px solid #2aacc8;
                 border-top: 2px solid #2aacc8;
@@ -282,13 +282,13 @@
             transition: all 0.3s ease 0s;
             position: absolute;
             content: '';
-            width: 12px;
-            height: 12px;
+            width: 15px;
+            height: 15px;
             border-right: 2px solid #757575;
             border-top: 2px solid #757575;
             transform: rotate(135deg);
             left: 3px;
-            top: -5px;
+            top: -7px;
             pointer-events: none;
         }
 
